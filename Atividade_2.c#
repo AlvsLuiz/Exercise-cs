@@ -1,0 +1,26 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
+
+class Program
+{
+    static int Main()
+    {
+        string txt1, txt2;
+        txt1 = Console.ReadLine();
+        txt2 = Console.ReadLine();
+        string test, test1;
+        test = txt1.ToUpper();
+        test1 = txt2.ToUpper();
+        int n= string.Compare(test, test1);
+        if (n==0)
+            Console.WriteLine($"as strings {txt1} e {txt2} sao iguais.");
+        else
+            Console.WriteLine("as strings sao diferentes.");
+
+
+
+
+        return 0;
+
+    }
+}
