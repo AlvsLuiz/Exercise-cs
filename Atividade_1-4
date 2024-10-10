@@ -1,0 +1,17 @@
+using System;
+class Program {
+    
+    static float ConverterParaFahrenheit(float temp){
+        float res=0;
+        res= ((temp*9)/5)+32;
+        return res;
+    }    
+  static void Main() {
+      float celsius=0, fahr=0;
+      Console.WriteLine("qual a temperatura de agora?");
+      celsius=int.Parse(Console.ReadLine());
+      fahr= ConverterParaFahrenheit(celsius);
+      Console.WriteLine($"{fahr:F2}° Fahrenheit");
+      
+  }
+}
