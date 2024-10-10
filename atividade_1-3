@@ -1,0 +1,18 @@
+using System;
+class Program {
+    static int CalcularFatorial(int n){
+        int res=1;
+        for(int i=1; i<=n; i++){
+            res= res * i;
+        }
+        return res;
+    }    
+  static void Main() {
+      int n=0, res=0;
+      Console.WriteLine("entre com um valor pra ser fatorado: ");
+      n=int.Parse(Console.ReadLine());
+      res=CalcularFatorial(n);
+      Console.WriteLine(res);
+      
+  }
+}
