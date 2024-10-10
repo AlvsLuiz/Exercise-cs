@@ -1,0 +1,22 @@
+using System;
+class Program {
+    
+    static int CalcularPotencia(int n, int exp){
+        int res=1;
+        for(int i=1;i<=exp;i++){
+            res=res* n;
+        }
+        
+        return res;
+    }    
+  static void Main() {
+      int n=0,expo=0, pot;
+      Console.WriteLine("qual sera o numero base da potenciacao");
+      n=int.Parse(Console.ReadLine());
+      Console.WriteLine("qual sera o numero expoente da potenciacao");
+      expo=int.Parse(Console.ReadLine());
+      pot= CalcularPotencia(n,expo);
+      Console.WriteLine(pot);
+      
+  }
+}
